@@ -3,12 +3,14 @@
 
 ### API Documentation:
 
+All game logic is handled on the backend by helperfunctions in utils.py
+
 Game Endpoints:
 
 All game endoints return the current game state after game logic has been handled:
 
 
-Example:
+Example Response:
 ```
 {
   'id' : 15
@@ -32,31 +34,31 @@ Example:
 
 - api/new_game/
 
-method: 'POST'
+  method: 'POST'
 
-body:
-```
-{
-  'player_bet' : 100
-}
-```
+  body:
+  ```
+  {
+    'player_bet' : 100
+  }
+  ```
 
 - api/play/<int:game_id>/hit/
 
-method: 'PATCH'
+  method: 'PATCH'
 
 - api/play/<int:game_id>/stay/
 
-method: 'PATCH'
+  method: 'PATCH'
 
 - api/play/<int:game_id>/bet/
 
-method: 'PATCH'
+  method: 'PATCH'
 
-body:
-```
-{
-  'player_bet' : 100
-}
-```
+  body:
+  ```
+  {
+    'player_bet' : 100
+  }
+  ```
 
