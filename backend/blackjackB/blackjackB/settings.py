@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-$p3y#x+@)$_y7o73#l661o=q1bl26^93o)=mvgha48o_aun^82
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -117,6 +117,7 @@ JWT_AUTH = {
 }
 
 
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -140,7 +141,20 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# CORS_ALLOWED_ORIGINS = ['https://blackjackfrontend.herokuapp.com/', 'http://blackjackfrontend.herokuapp.com/']
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+
+CORS_ALLOWED_ORIGINS = ['https://blackjackfrontend.herokuapp.com/', 'http://blackjackfrontend.herokuapp.com/']
+
+# CORS_ALLOW_ALL_ORIGINS = True
 django_heroku.settings(locals())
