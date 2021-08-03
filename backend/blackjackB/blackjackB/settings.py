@@ -154,7 +154,7 @@ CORS_ALLOW_HEADERS = [
     'x-requested-with',
 ]
 
-CORS_ALLOWED_ORIGINS = ['https://blackjackfrontend.herokuapp.com/', 'http://blackjackfrontend.herokuapp.com/']
+# CORS_ALLOWED_ORIGINS = ['https://blackjackfrontend.herokuapp.com/', 'http://blackjackfrontend.herokuapp.com/']
 
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 django_heroku.settings(locals())
