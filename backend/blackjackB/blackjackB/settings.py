@@ -140,6 +140,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CORS_ALLOWED_ORIGINS = ['https://blackjackfrontend.herokuapp.com/', 'http://blackjackfrontend.herokuapp.com/']
+# CORS_ALLOWED_ORIGINS = ['https://blackjackfrontend.herokuapp.com/', 'http://blackjackfrontend.herokuapp.com/']
 
+CORS_ALLOW_ALL_ORIGINS = True
 django_heroku.settings(locals())
