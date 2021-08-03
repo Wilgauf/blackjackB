@@ -1,1 +1,1 @@
-web: gunicorn backend/blackjackB/blackjackB/wsgi.py
+web: gunicorn blackjackB/blackjackB/wsgi.py
