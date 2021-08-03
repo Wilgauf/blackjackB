@@ -31,7 +31,9 @@ Example:
 
 
 api/new_game/
+
 method: 'POST'
+
 body:
 ```
 {
@@ -40,13 +42,17 @@ body:
 ```
 
 api/play/<int:game_id>/hit/
+
 method: 'PATCH'
 
 api/play/<int:game_id>/stay/
+
 method: 'PATCH'
 
 api/play/<int:game_id>/bet/
+
 method: 'PATCH'
+
 body:
 ```
 {
