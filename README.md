@@ -30,7 +30,7 @@ Example:
 ```
 
 
-api/new_game/
+- api/new_game/
 
 method: 'POST'
 
@@ -41,15 +41,15 @@ body:
 }
 ```
 
-api/play/<int:game_id>/hit/
+- api/play/<int:game_id>/hit/
 
 method: 'PATCH'
 
-api/play/<int:game_id>/stay/
+- api/play/<int:game_id>/stay/
 
 method: 'PATCH'
 
-api/play/<int:game_id>/bet/
+- api/play/<int:game_id>/bet/
 
 method: 'PATCH'
 
